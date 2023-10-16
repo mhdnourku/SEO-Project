@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,900;1,400&family=Sacramento&display=swap');
+
+
+
+
+
+
+html,body{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    line-height: 24px;
+    cursor: default !important;
+    font-family: Montserrat,sans-serif;
+}
+/*---------------------------navbar style--------------------------*/
+nav{
+    background-color: #344585;
+    height: 80px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+.nav{
+    width: 80%;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+}
+nav ul a:hover{
+    color: #CCD0E0;
+}
+.nav ul li{
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+}
+.nav p{
+    border: solid 2px white;
+    padding: 10px 30px;
+    color: white;
+}
+.secsaide{
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.fsaide a{
+    font-family: Montserrat,sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.nav .box:hover p{
+    background-color: white;
+    color: #6384FF;
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+/*--------------------------------hero section----------------------------------------------*/
+.hero{
+    background-color: #6384FF;
+    padding-top: 0px;
+}
+.hero .content{
+    height: 550px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+.hero .content h1{
+    font-size: 45px;
+    padding-bottom: 0px;
+}
+.boxnav{
+    width: 40px;
+    height: 40px;
+    background-color: #344585;
+    position: absolute;
+    padding: 2px;
+    right: 0;
+    bottom: 0;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    animation:typing 1.2s linear infinite alternate;
+    font-size: 2rem;
+    width: 0;
+  }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+/*--------------------------------------------------------------------------------------------*/
+#services-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #323232;
+
+    
+}
+.services  h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 44px;
+    
+}
+.dashed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.dash:nth-of-type(1){
+    background-color:#6384FF;
+    width:128px;
+    height:2px;
+    border-radius: 3px;
+
+
+}
+
+.dash:nth-of-type(2){
+    background-color:#6384FF;
+    width:30px;
+    height:2px;
+    border-radius: 1px;
+    margin-left: 20px;
+
+
+}
+.services .blocks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.services .block{
+    text-align: center;
+    margin: 5px;
+}
+.services .block img{
+    margin-bottom: 20px;
+}
+
+.services .block p{
+    font-size: 18px;
+}
+.services h2{
+    font-size:30px;
+    color: #32325C;
+    margin-bottom: 40px;
+}
+/*----------------------------end services section--------------------------------------*/
+
+/*----------------------------start search section--------------------------------------*/
+.search{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    line-height: 46px;
+    color: #323232;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600px;
+}
+.search .dashed{
+    justify-content: left;
+}
+.search .description h1{
+    font-size: 44px;
+    line-height: 46px;
+}
+.search button{
+    font-family: Montserrat,sans-serif;
+    font-weight: 600px;
+    font-size:15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #6384FF;
+    border: solid 1px #6384FF;
+}
+.search button:hover{
+    background-color: #6384FF;
+    color: white;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+/*----------------------------end search section----------------------------------------*/
+
+/*----------------------------start seo section----------------------------------------*/
+.seo{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+
+}
+.seo .imglist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seo .imglist .imgbox{
+   margin: 20px;
+   position: relative;
+}
+.seo .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0 ;
+    transition: opacity 0.4s ease-in-out;
+    background-color: black;
+    cursor: pointer;
+  }
+.seo .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+.seo .imgbox:hover .overlay{
+    opacity: 0.8;
+  }
+
+
+/*----------------------------end seo section----------------------------------------*/
+
+/*----------------------------start pricing section----------------------------------*/
+.pricing{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    /* height: 750px; */
+}
+
+.pricing h1{
+    font-size: 40px;
+}
+.pricing-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricing-list .squer{
+    width: 310px;
+    height: 240px;
+    background-color: #FABC05;
+    position: relative;
+    overflow: hidden;
+}
+.pricing-list .content:nth-of-type(2) .squer{
+    background-color: #6384FF;
+}
+.pricing-list .content:nth-of-type(3) .squer{
+    background-color: #39A96F;
+}
+.r{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 120px;
+}
+.r:nth-of-type(1){
+    right:-23px;
+    bottom:-30px;
+    background-color: white;
+}
+
+.r:nth-of-type(2){
+    left:1px;
+    bottom:-70px;
+    background-color: white;
+}
+
+.pricing-list .theprice{
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 10px;
+    border: solid 8px rgba(117, 112, 112, 0.24)
+}
+.theprice h2{
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 40px;
+}
+.theprice p{
+    line-height: 0px;
+    margin-top: -10px;
+
+}
+.pricingbox{
+    position: relative;
+}
+.pricing-list .content ul{
+    text-align: left;
+    margin-top: 60px;
+    margin-left: -30px;
+    list-style: none;
+    line-height: 35px;
+
+}
+
+.pricing-list .content ul li::before{
+    content: "\f05d";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-style: bold;
+    padding-right: 20px;
+    color: #FABC05;
+}
+.pricing-list .content{
+    overflow: hidden;
+    height: 580px;
+    cursor: pointer;
+}
+.pricing-list .content:nth-of-type(1) ul li:not(:nth-last-child(n+3))::before{
+    content: "";
+    padding-right: 39px;
+}
+.pricing-list .content:nth-of-type(1) ul li:not(:nth-last-child(n+3)){
+    font-size: 20px;
+    font-weight: 900;
+    color: #323232;
+}
+
+.pricing-list .content:nth-of-type(2) ul li:last-child{
+    font-size: 20px;
+    font-weight: 900;
+    color: #323232;
+}
+
+.pricing-list .content:nth-of-type(2) ul li:last-child::before{
+    content: "";
+    padding-right: 39px;
+}
+
+.pricing-list .content:nth-of-type(2) ul li::before{
+    color: #6384FF;
+}
+.pricing-list .content:nth-of-type(3) ul li::before{
+    color: #39A96F;
+}
+.pricing-list .content button{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600px;
+    background-color: white;
+    padding: 10px 30px;
+    border: solid 2px #FABC05;
+}
+.pricing-list .content:nth-of-type(2) button{
+    border: solid 2px #6384FF;
+}
+.pricing-list .content:nth-of-type(3) button{
+    border: solid 2px #39A96F;
+}
+
+.pricing-list .content:nth-of-type(1):hover .theprice{
+    background-color: #FABC05;
+    transition: .5s ease;
+
+}
+.pricing-list .content:nth-of-type(2):hover .theprice{
+    background-color: #6384FF;
+    transition: .5s ease;
+
+}
+.pricing-list .content:nth-of-type(3):hover .theprice{
+    background-color: #39A96F;
+    transition: .5s ease;
+
+}
+.pricing-list .content:nth-of-type(1) button:hover{
+    color: white;
+    background-color:  #FABC05;
+    border: none;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.pricing-list .content:nth-of-type(2) button:hover{
+    color: white;
+    background-color:  #6384FF;
+    border: none;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.pricing-list .content:nth-of-type(3) button:hover{
+    color: white;
+    background-color: #39A96F;
+    border: none;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.pricing-list .content .squer h1{
+    font-size: 30px;
+    padding: 25px 20px;
+    color: white;
+}
+/*----------------------------end pricing section-----------------------------------*/
+
+/*----------------------------start Team section------------------------------------*/
+.teamSection{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    /* height: 1000px; */
+    /* margin-bottom: 800px; */
+}
+.teamSection .teamheader h1{
+    font-size: 35px;
+    line-height: 40px;
+    color: #323232;
+}
+.teamSection .teamheader p{
+    line-height: 0px;
+    color: #323232;
+}
+.teamSection .teamcontent{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.teamSection .teamcontent .card{
+    margin-top: 50px;
+    width: 310px;
+    height: 450px;
+    text-align: center;
+    overflow:hidden;
+    color: #32325C;
+    cursor: pointer;
+}
+.teamSection .teamcontent .card img{
+    width: 100%;
+}
+.teamSection .teamcontent .card h1{
+    font-size: 25px;
+}
+.teamSection .teamcontent .card p{
+    font-size: 15px;
+}
+.teamSection .teamcontent .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.teamSection .teamcontent .card:hover h1{
+    color: #6384FF;
+}
+
+
+/*----------------------------end Team section--------------------------------------*/
+
+/*----------------------------start scrolimage section------------------------------*/
+
+.scrolImage{
+    background-color: #FCFCFC;
+    margin-top: 100px;
+    height: 100px;
+}
+.scrolImage .imageconent{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+.scrolImage .imageconent ul{
+    list-style: none;
+    display: flex;
+    gap: 5.3em;
+    align-items: center;
+    animation: slides 3s alternate delay infinite ;
+}
+
+@keyframes slides {
+    0%{
+        left: 0;
+    }
+    25%{
+        left: -30px
+
+    }
+    50%{
+        left: -60px
+    }
+    100%{
+        left: 0;
+    }
+    
+}
+/*----------------------------end scrolimage section--------------------------------*/
+/*----------------------------start Testimonial section--------------------------------*/
+.testimonialSection{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    overflow-x: hidden;
+
+}
+
+.testimonialSection .testhead h1{
+    font-size: 40px;
+    color: #323232;
+
+}
+.testimonialSection .testcontent{
+    display: flex;
+    justify-content: space-between;
+    gap: 5.3em;
+}
+
+.testimonialSection .testcontent .card .test{
+    margin-top: 150px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    
+
+}
+.testimonialSection .testcontent .card .squer{
+    width: 300px;
+    height: 200px;
+    border-radius:500px;
+    background-color: #6384FF;
+
+}
+.testimonialSection .testcontent .card .squer1{
+    width: 200px;
+    height: 200px;
+    border-radius:200px;
+    background-color: #6384FF;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: -80px;
+    color: white;
+}
+.testimonialSection .testcontent .card:nth-of-type(2) .squer{
+    background-color: #FABC05;
+}
+.testimonialSection .testcontent .card:nth-of-type(2) .squer1{
+    background-color: #FABC05;
+}
+.testimonialSection .testcontent .card:nth-of-type(3) .squer{
+    background-color: #39A96F;
+}
+.testimonialSection .testcontent .card:nth-of-type(3) .squer1{
+    background-color: #39A96F;
+}
+
+.testimonialSection .testcontent .card .squer1 .content{
+    margin-top: 35px;
+}
+.testimonialSection .testcontent .card .squer1 .content i{
+    font-size: 60px
+}
+
+.testimonialSection .testcontent .card .footer{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    border-left: dashed 4px #6384FF;
+    margin-left: 150px;
+    
+} 
+.testimonialSection .testcontent .card:nth-of-type(2) .footer{
+    border-left: dashed 4px #FABC05;
+  
+}
+.testimonialSection .testcontent .card:nth-of-type(3) .footer{
+    border-left: dashed 4px #39A96F;
+  
+}
+.testimonialSection .testcontent .card:nth-of-type(2) .ftext h2{
+    color: #FABC05;
+}
+.testimonialSection .testcontent .card:nth-of-type(3) .ftext h2{
+    color: #39A96F;
+}
+.testimonialSection .testcontent .card .ftext h2{
+    font-size: 18px;
+    color: #6384FF;
+    line-height: 10px;
+}
+.testimonialSection .testcontent .card .ftext p{
+    color: #323232;
+    font-size: 13px;
+}
+
+
+/*----------------------------end Testimonial section--------------------------------*/
+
+/*----------------------------start form section-------------------------------------*/
+.formsection{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    overflow-x: hidden;
+}
+.formsection .formhead h1{
+    font-size: 40px;
+    color: #323232;
+}
+.formsection .formcontent{
+    width: 80%;
+    margin: 0 auto;
+}
+.formsection form input[type=text]{
+    margin-bottom: 40px;
+    width: 300px;
+    height: 40px;
+    padding: 10px 25px;
+    margin-right: 20px;
+    border: solid 2px #323232;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+.formsection form textarea{
+    margin-right: 20px;
+    border: solid 2px #323232;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+
+}
+.formsection form input[type=submit]{
+    display: block;
+    font-size: 20px;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    margin-left: 53px;
+    width: 735px;
+    height: 80px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 2px #6384FF;
+    background-color: white;
+    color: #6384FF;
+    cursor: pointer;
+    
+}
+
+.formsection form input[type=submit]:hover{
+    border: solid 2px white;
+    background-color: #6384FF;
+    color: white;
+    transition: .3s ease-in;
+}
+.formfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6384FF;
+    font-size: 20px;
+}
+.formfooter .icon{
+    margin-left: 20px;
+}
+.formfooter .icon a{
+    color: #6384FF;
+}
+.formfooter .icon i{
+    margin-left: 6px;
+    font-size: 13px;
+}
+
+
+/*----------------------------end form section---------------------------------------*/
+
+/*----------------------------start contactsection section---------------------------------------*/
+.contactsection{
+    background-color: #FCFCFC;
+    /* height: 110px; */
+}
+.contactsection .contact{
+    padding: 50px 0;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contactsection .contact .rcontact{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.contactsection .contact .rcontact .box{
+    margin-right: 20px;
+    color: #323232;
+}
+.contactsection .contact .rcontact .box{
+    font-size: 18px;
+}
+
+.contactsection .contact .rcontact .box a{
+    color: #323232;
+    text-decoration: none;
+}
+.contactsection .contact .rcontact .box a:hover{
+    color: #6384FF;
+}
+.contactsection .contact .lcontact button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: white;
+    border: solid 2px #6384FF;
+    border-radius: 5px;
+    color: #6384FF;
+    cursor: pointer;
+}
+.contactsection .contact .lcontact button:hover{
+    background-color: #6384FF;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+/*----------------------------end contactsection section---------------------------------------*/
+
+
+/*----------------------------start footer section---------------------------------------------*/
+
+.footersection{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.footersection .footercontent{
+    color: #323232;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footersection .footercontent a{
+    color: #323232;
+}
+.footersection .footercontent .icon i:hover{
+    color: #6384FF;
+}
+.footersection .footercontent a{
+    text-decoration: none;
+}
+
+.footersection .footercontent a:hover{
+    color: #6384FF;
+}
+
+
+/*----------------------------end footer section-----------------------------------------------*/
+
+@media (max-width: 500px) {
+    nav ul{
+        display: none;
+    }
+    .hero .content {
+        flex-wrap: wrap;
+    }
+    .hero .content img{
+        width: 350px;
+    }
+    .services .blocks{
+        flex-wrap: wrap;
+    }
+    .search{
+        flex-wrap: wrap;
+    }
+    .pricing-list{
+        flex-wrap: wrap;
+        /* margin-bottom: 10000000px; */
+    }
+    .pricing-list .content{
+        margin-top: 50px;
+    }
+    .footersection .footercontent,.contactsection .contact,
+    .contactsection .contact .rcontact{
+        flex-wrap: wrap;
+    }
+    .formsection form input[type=text],.formsection form textarea{
+        display: block;
+        width: 180px;
+    }
+    .formsection form input[type=submit]{
+        width: 230px;
+        margin: 0;
+    }
+    .formsection form textarea{
+        height: 60;
+    }
+    .hero .content .text{
+        text-align: center;
+        padding-left: 30px
+    }
+    .hero .content .typed-out{
+        padding-left: 35px;
+    }
+    .pricing-list .content{
+        margin-bottom: 20px;
+    }
+    .search .img img{
+        margin-top: 30px;
+        width: 300px;
+    }
+    .services h1{
+        line-height: 40px;
+    }
+
+}
+
